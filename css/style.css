@@ -562,10 +562,6 @@ footer {
     }
 }
 
-@media only screen and (max-width: 900px) {
-
-}
-
 @media only screen and (max-width: 850px) {
     #banner {
         height: 500px;

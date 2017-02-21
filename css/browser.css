@@ -34,3 +34,17 @@
 .module-desc p{
   line-height: 30px
 }
+
+@media only screen and (max-width: 900px) {
+
+  .module-desc {
+    height: auto;
+  }
+
+  .module-desc,
+  .web-content {
+    position: static;
+    width: 100%;
+  }
+
+}
