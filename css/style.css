@@ -431,6 +431,7 @@ input[type="text"] {
 
 input[type="text"], button {
     width: 60%;
+    height: auto;
     color: black;
     background-color: #EBF4F4;
     margin-top: 30px;
