@@ -45,6 +45,7 @@ li {
     display: none;
 }
 
+
 /*End of General Page Styling*/
 
 
@@ -64,7 +65,7 @@ li {
 }
 
 #nav li {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 #nav:not(:target) {
@@ -140,11 +141,11 @@ header .container {
 }
 
 #logo div {
+    display: table;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 3px;
-    display: inline-block;
-    float: left;
+    margin: 0 auto;
 }
 
 #logo #logo-text {
@@ -343,8 +344,7 @@ header .container {
     display: block;
 }
 
-.work-container,
-.contact-container {
+.work-container, .contact-container {
     float: left;
     padding: 0 2%;
 }
@@ -404,7 +404,6 @@ input[type="text"] {
     border: none;
     border-bottom: 2px solid black;
 }
-
 
 button {
     margin-bottom: 100px;
@@ -472,7 +471,9 @@ footer {
     float: left;
 }
 
+
 /*End footer styleing*/
+
 
 /*Start of Grid*/
 
@@ -539,7 +540,6 @@ footer {
 }
 
 @media only screen and (max-width: 1200px) {
-
     .work-item {
         width: 100%;
     }
@@ -620,16 +620,14 @@ footer {
     .bg {
         height: 90%;
     }
-
     #work-info {
         top: -55%;
     }
     #work-container-1, #contact-container-1 {
         font-size: 35px;
     }
-
     input[type="text"], button {
-      width: 80%;
+        width: 80%;
     }
 }
 
