@@ -322,7 +322,7 @@ header .container {
 
 /*Start Work Styling*/
 
-#workSection #contactSection {
+#workSection, #contactSection {
     padding: 10% 0;
     display: block;
     position: relative;
