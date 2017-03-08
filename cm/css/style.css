@@ -1,0 +1,321 @@
+/*Start General Page Styling*/
+
+/*
+colors:
+  00AEEF
+  00F35B
+  FFB600
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    /*overflow: hidden;*/
+}
+
+h1, h1, h3, p {
+    margin-top: 10px;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    color: #00F35B;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h3 span {
+  color: #FFB600;
+}
+
+p {
+    line-height: 30px;
+    font-size: 20px;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+
+.center {
+    margin: auto;
+}
+
+.vCenter {
+    margin: auto 0;
+}
+
+.hCenter {
+    margin: 0 auto;
+}
+
+.top {
+  justify-content: flex-start;
+}
+
+.panel {
+    height: 100vh;
+}
+
+.wrapper {
+    max-width: 1440px;
+}
+
+.container {
+    padding: 4% 2.5%;
+    width: 50%;
+    /*border: 1px solid red;*/
+}
+
+.img-container {
+  width: 100%;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+#p1  .container:nth-of-type(2) {
+  position: relative;
+}
+
+#p1 .img-container img {
+  position: absolute;
+  top: -7%;
+  width: 90%;
+}
+
+#p4 .img-container img {
+  margin: 0;
+  width: 100%;
+  height: 80%;
+}
+
+.seperator {
+    width: 100px;
+    height: 5px;
+    background-color: #00AEEF;
+    margin: 5% 0;
+}
+
+.border-test {
+    border: 1px solid red;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+
+/*Start Banner Styling*/
+
+.banner-inner {
+    height: 100vh;
+    padding: 0 5%;
+    font-weight: 800;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap;
+}
+
+#banner-left {
+    flex: 1;
+    background-color: #00aeef;
+    /*background: linear-gradient(to left, rgb(28, 216, 210), rgb(147, 237, 199));*/
+    color: #fff;
+}
+
+#banner-right {
+    position: relative;
+    flex-wrap: wrap;
+    color: #00aeef;
+    flex: 1;
+}
+
+.banner-inner-h {
+    margin: auto 0;
+    opacity: 0;
+}
+
+#inner-h2 div:last-of-type {
+    color: #00F35B;
+}
+
+.arrowDown {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+
+#arrowDown-svg {
+    height: 50px;
+    width: auto;
+}
+
+.mouse-wrap {
+    position: absolute;
+    display: block;
+    bottom: 8%;
+    left: 90%;
+}
+
+.mouse {
+    width: 28px;
+    height: 50px;
+    border: 2px solid #00aeef;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.scroller {
+    width: 5px;
+    height: 5px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #00aeef;
+    top: 7px;
+    left: 10px;
+    position: relative;
+    -webkit-animation: mousescroll 1s ease-out infinite;
+    -moz-animation: mousescroll 1s ease-out infinite;
+}
+
+footer {
+  height: 50vh;
+  background-color: #00AEEF;
+  padding: 2.5% 5%;
+}
+
+footer p {
+  color: white;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+/* Animations*/
+
+@-webkit-keyframes mousescroll {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+        height: 4px;
+    }
+    100% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+        opacity: 0;
+        height: 10px;
+    }
+}
+
+@media only screen and (min-width: 200px) {
+    .panel {
+        height: auto;
+    }
+    .container {
+        flex: none;
+        width: 100%;
+    }
+    .banner-inner {
+        font-size: 3rem;
+        height: 50vh;
+    }
+    #inner-h1 {
+        margin-left: 0;
+    }
+    #div1 {
+      order: 1;
+    }
+    #div2 {
+      order: 2;
+    }
+
+    .img-container img {
+      display: none;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    hr {
+      display: none;
+    }
+
+    .banner-inner {
+        height: 100vh;
+    }
+    #inner-h1 {
+        margin-left: auto;
+    }
+    .img-container img {
+      display: block;
+    }
+
+    #p1 .img-container img {
+      position: static;
+      margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .panel {
+        height: 100vh;
+    }
+    .container {
+        flex: 1;
+    }
+    .banner-inner {
+        font-size: 4rem;
+    }
+
+    #p1 .img-container img {
+      position: absolute;
+      top: -7%;
+      width: 90%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .banner-inner {
+        font-size: 5rem;
+    }
+    #div1 {
+      order: 0;
+    }
+    #div2 {
+      order: 0;
+    }
+}

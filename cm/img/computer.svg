@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#95A5A6;}
+	.st1{fill:#BDC3C7;}
+	.st2{fill:#ECF0F1;}
+	.st3{fill:#00AEEF;}
+	.st4{fill:#2B3E51;}
+	.st5{fill:#33495F;}
+	.st6{fill:#EC7C2D;}
+	.st7{fill:#32495D;}
+	.st8{fill:#00F35B;}
+	.st9{fill:#F4C342;}
+	.st10{fill:#ED0F24;}
+</style>
+<g>
+	<g>
+		<polygon class="st0" points="307.5,399 204.5,399 194.5,382 317.5,382 		"/>
+		<rect x="204" y="399" class="st1" width="103" height="13"/>
+		<polygon class="st2" points="337.5,441 174.5,441 204.5,412 307.5,412 		"/>
+		<path class="st1" d="M174,441v10c0,3.3,2.7,6,6,6h151c3.3,0,6-2.7,6-6v-10H174z"/>
+		<rect x="84" y="135" class="st3" width="342" height="196"/>
+		<path class="st4" d="M432,119H80c-5.5,0-10,4-10,9.5V345h372V128.5C442,123,437.5,119,432,119z M426,331H84V135h342V331z"/>
+		<path class="st2" d="M70,345v27.5c0,5.5,4.5,10.5,10,10.5h352c5.5,0,10-5,10-10.5V345H70z"/>
+		<circle class="st5" cx="256" cy="364" r="8"/>
+		<polygon class="st6" points="321.5,165 321.5,165 321.5,165 		"/>
+		<rect x="106" y="177" class="st7" width="183" height="150"/>
+		<rect x="106" y="152.5" class="st4" width="183" height="25"/>
+		<g>
+			<rect x="113" y="161.5" class="st8" width="105" height="7"/>
+			<rect x="156" y="212" class="st2" width="38" height="7"/>
+			<rect x="200" y="212" class="st8" width="38" height="7"/>
+		</g>
+		<g>
+			<rect x="114" y="254" class="st8" width="66" height="7"/>
+			<rect x="185" y="271" class="st9" width="63" height="7"/>
+			<rect x="113" y="290" class="st9" width="63" height="7"/>
+			<rect x="185" y="290" class="st2" width="63" height="7"/>
+			<g>
+				<rect x="190" y="153" class="st4" width="68" height="7"/>
+				<rect x="113" y="170" class="st4" width="63" height="7"/>
+				<rect x="113" y="189" class="st10" width="63" height="7"/>
+				<rect x="185" y="189" class="st4" width="63" height="7"/>
+				<rect x="113" y="212" class="st4" width="38" height="7"/>
+				<rect x="243" y="212" class="st4" width="38" height="7"/>
+				<rect x="113" y="236" class="st4" width="105" height="7"/>
+				<rect x="190" y="254" class="st4" width="68" height="7"/>
+				<rect x="113" y="271" class="st4" width="63" height="7"/>
+				<polyline class="st4" points="194,313 194,320 156,320 156,313 				"/>
+			</g>
+		</g>
+		<g>
+			<path class="st7" d="M320.5,135.5C320.4,135.4,320.1,135.5,320.5,135.5L320.5,135.5z"/>
+		</g>
+	</g>
+</g>
+</svg>
