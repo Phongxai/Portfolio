@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #38414b;
+  /*background: #1C1E23;*/
+}
+
+h1, h2, h3 {
+  /*font-family: 'Playfair Display', serif;*/
+  font-family: 'Montserrat', sans-serif;
+  color: #38414b;
+  margin: 15px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #717a85;
+}
+
+.gradient {
+  background: -webkit-linear-gradient(50deg, #449cf2, #36F3B0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient2 {
+  background: -webkit-linear-gradient(77deg, #8E36A5, #FA5500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/**************************Header**************************/
+.cd-intro {
+  position: fixed;
+  width: 100%;
+}
+
+header {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.nav-bar {
+  position: relative;
+  max-width: 1600px;
+  width: 90%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: auto 0;
+}
+
+.logo {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  z-index: 11;
+}
+
+.main-nav {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+}
+
+.main-nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.main-nav ul li a {
+  color: #449cf2;
+}
+
+.main-nav ul li:nth-child(2) {
+  margin-right: 0;
+}
+
+/**************************End Header**************************/
+
+/**************************Hero**************************/
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  /*padding: 5% 0;*/
+}
+
+.hero-inner {
+  position: relative;
+  height: 100%;
+  max-width: 1600px;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hero-intro {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.hero-intro-info h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+
+.hero-intro-info h2 {
+  font-weight: 400;
+  color: #449cf2;
+}
+
+.nav-button {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  overflow: hidden;
+}
+
+.mouse-wrap {
+    display: block;
+}
+
+.mouse {
+    width: 28px;
+    height: 50px;
+    border: 2px solid #449cf2;
+    border-radius: 12px;
+}
+
+.scroller {
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background: #449cf2;
+    top: 7px;
+    left: 10px;
+    position: relative;
+    -webkit-animation: mousescroll 1s ease-out infinite;
+    -moz-animation: mousescroll 1s ease-out infinite;
+}
+
+/**************************End Hero**************************/
+
+
+/**************************Main Content**************************/
+
+.main-content {
+  position: relative;
+  top: 100vh;
+  padding: 5% 0;
+  z-index: 9999;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 7px 0 rgba(37, 43, 53, 0.15);
+
+}
+
+.main-content, .project-img, .project-info {
+  width: 100%;
+}
+
+.container {
+  max-width: 1600px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card {
+  width: 50%;
+  max-height: 600px;
+  float: left;
+  overflow: hidden;
+}
+
+.card .card-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@-webkit-keyframes mousescroll {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        height: 4px;
+    }
+    100% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        height: 10px;
+    }
+}
+
+/**************************End Main Content**************************/
+@media only screen and (max-width: 1200px) {
+
+  .hero-intro-info h1 {
+    font-size: 2rem;
+  }
+
+  .hero-intro-info h2 {
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  header {
+    height: 100px;
+  }
+
+  .hero {
+    padding: 2% 0;
+  }
+
+  .hero-intro-info h1 {
+    font-size: 1rem;
+  }
+
+  .hero-intro-info h2 {
+    font-size: 0.5rem;
+  }
+
+  .card {
+    width: 100%;
+    max-height: 500px;
+  }
+}
