@@ -6,6 +6,7 @@ $(function() {
     'height': dHeight + 'px'
   });
 
+
   setBindings();
 
 });
@@ -35,7 +36,7 @@ $(window).scroll(function() {
 });
 
 function setBindings() {
-  $(".main-nav ul li a, .nav-button").click(function(e) {
+  $("#index-nav li a, .nav-button").click(function(e) {
     e.preventDefault();
 
     var sectionID = e.currentTarget.id + "Section";

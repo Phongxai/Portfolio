@@ -121,7 +121,7 @@ header {
 
 .hero-intro-info h1,
 .project-title {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 700;
   margin-bottom: 2%;
 }
@@ -149,6 +149,19 @@ header {
 .hero-image img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.title-line {
+  display: inline-block;
+  width: 80px;
+  border: 1px solid #449cf2;
+}
+
+.title-desc {
+  font-size: 1.5rem;
+  color: #449cf2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .mouse-wrap {
@@ -273,7 +286,7 @@ header {
 
 @media only screen and (max-width: 1200px) {
   .hero-intro-info h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .hero-intro-info h2 {
     font-size: 1.3rem;
@@ -291,7 +304,7 @@ header {
     top: 40%;
   }
   .hero-intro-info h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .hero-image {
     width: 300px;
@@ -305,4 +318,8 @@ header {
   }
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+  .hero-intro-info h1 {
+    font-size: 2rem;
+  }
+}
