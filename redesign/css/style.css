@@ -1,0 +1,395 @@
+/*********************************************************************************************************************************************************************************************/
+/* General Styling*/
+/*********************************************************************************************************************************************************************************************/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #38414b;
+  background: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: #38414b;  
+  font-family: 'Lato', sans-serif;
+}
+
+/* h1 {
+  font-family: 'Playfair Display', serif;  
+  font-weight: 800;
+  font-size: 3rem;
+} */
+
+h1, h2, h3 {font-family: 'Montserrat', sans-serif;}
+h1 {font-size: 5rem;}
+h2 {font-size: 1rem;}
+h3 {font-size: 0.8rem;}
+
+h1,h2,h3 {
+  margin: 0;
+}
+
+hr {
+  margin-left: 20px;
+  width: 20px;
+  transition: .25s cubic-bezier(.215,.61,.355,1);    
+}
+
+.container {
+  position: relative;
+  width: 95%;
+  max-width: 1600px;
+  padding: 50px 0;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  position: relative;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.half {
+  flex: 0 1 auto;
+  width: 50%;
+}
+
+/*********************************************************************************************************************************************************************************************/
+/* General Styling End*/
+/*********************************************************************************************************************************************************************************************/
+
+
+
+
+.overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background: #000;
+  overflow-x: hidden;
+  /* display: none; */
+  z-index: 9999;
+  transition: all 0.5s;
+}
+
+.overlay-wrapper {
+  width: 95%;
+  height: 100vh;
+  max-width: 1600px;
+}
+
+.overlay-navbar {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  /* border: 1px solid white; */
+}
+
+.overlay-content_Wrapper {
+  position: relative;
+  height: calc(100% - 150px);
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.overlay-content {
+  flex: 0 1 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay a {
+  padding: 10px;
+  color: #eee;
+  font-size: 30px;
+  text-decoration: none;
+  display: block;
+}
+
+.overlay a:hover {
+  color: #fff;
+}
+
+
+.overlay .closeBtn {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  /* top: 20px;
+  right: 50px; */
+  right: 0;
+  font-size: 35px;
+}
+
+
+/*********************************************************************************************************************************************************************************************/
+/* Header Styling*/
+/*********************************************************************************************************************************************************************************************/
+
+header {
+  height: 150px;
+  width: 100%;
+  /* position: absolute; */
+  top: 0;
+  z-index: 9999;
+}
+
+.nav-bar {
+  position: relative;
+  max-width: 1600px;
+  width: 90%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: auto 0;
+}
+
+.logo {
+  font-family: 'Berkshire Swash', cursive;  
+  font-size: 2rem;
+  font-weight: 800;
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  z-index: 11;
+}
+
+.main-nav {
+  position: absolute;
+  right: 0;
+  display: inline-block;  
+}
+
+.main-nav a {
+  display: block;
+}
+
+.main-nav span{
+  width: 30px;
+  height: 4px;
+  background: #4BB7FB;
+  /* background-image: linear-gradient(90deg, #4BB7FB, #526DFF);   */
+  display: block;
+  margin-top: 4px;
+}
+
+.main-nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.main-nav ul li a {
+  color: #449cf2;
+}
+
+.main-nav ul li:nth-child(2) {
+  margin-right: 0;
+}
+
+
+
+/*********************************************************************************************************************************************************************************************/
+/* Header Styling End*/
+/*********************************************************************************************************************************************************************************************/
+
+
+/*********************************************************************************************************************************************************************************************/
+/* Hero Styling*/
+/*********************************************************************************************************************************************************************************************/
+
+.hero-section {
+  width: 100%;
+}
+
+.hero-section_Title h1 span{
+  display: block;
+}
+
+.hero-section_Description {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: #449cf2;  
+}
+
+.hero-section_Button {
+  position: relative;
+  display: inline-block;
+  box-shadow: none;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  border-radius: 5px;
+  background-image: linear-gradient(90deg, #4BB7FB, #526DFF);
+  background-size: 200% auto;
+  transition: 0.5s; 
+  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);  
+  margin: 10px 20px 10px 0;
+}
+
+#btn-contact {
+  width: 120px;
+}
+
+.hero-section_Button a {
+  display: block;
+  color: white; 
+}
+
+.hero-section_Button:hover {
+  background-position: right center;
+  box-shadow: 0 5px 10px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);  
+  top: 1px;
+}
+
+/*********************************************************************************************************************************************************************************************/
+/* Hero Styling End*/
+/*********************************************************************************************************************************************************************************************/
+
+/*********************************************************************************************************************************************************************************************/
+/* Project Item Styling*/
+/*********************************************************************************************************************************************************************************************/
+
+.project-item {
+  position: relative;
+  width: 30%;
+  flex: 0 1 auto;
+  margin-bottom: 72px;
+}
+
+.project-item:hover .project-item_Inner {
+  box-shadow: 0 5px 10px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);  
+  top: 1px;
+}
+
+.project-item:hover hr {width: 100px;}
+.project-item_Wrapper {height: 100%;}
+
+.project-item_Inner {
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  transition: .25s cubic-bezier(.215,.61,.355,1);  
+  border-radius: 10px;  
+  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+  background: #fff;
+}
+
+.project-item_FigureWrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-item_FigureWrapper a img {
+  width: 100%;
+  display: block;
+} 
+
+.project-item_Figure {
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+  margin: 0;
+  background-size: cover;
+  overflow: hidden;  
+}
+
+.project-item_DescriptionWrapper {
+  width: 100%;
+  padding: 10px 0;
+  border-top: 1px solid #DAD5D5;
+}
+
+.project-item_description {
+  border-radius: 0 0 10px 10px;
+  background: white; 
+}
+
+.project-item_Titledesc {
+  color: #449cf2;  
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.project-item_Workdesc {
+  font-weight: 600;
+}
+
+.project-item_Title {
+  padding: 12px 0 12px 20px;
+}
+
+.project-item_Work {
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+#project-item_work2 {
+  padding-bottom: 20px;
+}
+
+/*********************************************************************************************************************************************************************************************/
+/* Project Item Styling End*/
+/*********************************************************************************************************************************************************************************************/
+
+/*********************************************************************************************************************************************************************************************/
+/* Media Queries*/
+/*********************************************************************************************************************************************************************************************/
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .project-item {
+    width: 48%;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    width: 90%;
+    padding: 0 0 50px 0;
+  }
+
+  .project-item {
+    width: 100%; 
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section_Description,
+  .hero-section_Button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/*********************************************************************************************************************************************************************************************/
+/* Media Queries End*/
+/*********************************************************************************************************************************************************************************************/
