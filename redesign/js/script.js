@@ -1,35 +1,17 @@
-$( document ).ready(function() {
+jQuery(window).load(function() {
     
-      // setBindings();
-      // openNav();
-      linkNav();
 });
 
-function setBindings() {
-    $(".main-nav ul li a").click(function(e) {
-      e.preventDefault();
-  
-      var sectionID = e.currentTarget.id + "Section";
 
-      // console.log(sectionID);
-  
-      $("html body").animate({
-        scrollTop: $("#" + sectionID).offset().top
-      }, 1000);
+$(document).ready(function() {
+    $('.openNav').click(function () {
+        openNav();        
     });
-  }
+});
 
-
-  function openNav() {
-    document.getElementById('nav').style.width = "100%";
-  }
-
-  function closeNav() {
-    document.getElementById('nav').style.width = "0%";
+function openNav() {
+    $('.openNav').css({
+        "width" : "100%"
+    });
+    console.log("hello");
 }
-
-  function linkNav() {
-    $(".overlay-content a").click(function(){
-      closeNav();
-    });
-  }
