@@ -10,17 +10,33 @@
 	<link rel="icon" href="img/favicon.jpg">
 
 	<!-- CSS Stylesheets -->
-	<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Roboto|Berkshire+Swash|" rel="stylesheet">
 </head>
-<body>
-	<div class="overlay">
 
+<body>
+	<div class="overlay" id="nav">
+		<div class="overlay-wrapper">
+			<div class="overlay-navbar">
+				<a href="#" class="closeBtn" onclick="closeNav()">
+					&#x2716
+				</a>
+			</div>
+			<div class="overlay-content_Wrapper">
+				<div class="overlay-content">
+					<a href="#workSection" id="work">
+						work
+					</a>
+					<a href="#contactSection" id="work">
+						contact
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 	<header id="index-header">
 		<div class="nav-bar" id="index-nav-bar">
@@ -33,10 +49,11 @@
 			</div>
 			<div class="nav-menu-wrapper">
 				<div class="nav-menu" id="index-nav-menu">
-					<a href="#" id="openNav">
+					<a href="#" class="openBtn" onclick="openNav()">
 						<span></span>
 						<span></span>
 						<span></span>
+						<!-- menu -->
 					</a>
 				</div>
 			</div>
@@ -49,28 +66,30 @@
 					<div class="hero-section-title">
 						<h1>
 							<span class="span-block">
-								Design<span id="span-period">.</span>
+								Design
+								<span id="span-period">.</span>
 							</span>
 							<span class="span-block">
 								And
 							</span>
 							<span class="span-block">
-								Develop<span id="span-period">.</span>
+								Develop
+								<span id="span-period">.</span>
 							</span>
 						</h1>
 						<h2>
 							<span>
 								Passionate about technology and exploring the vast space of Front End and Design<span id="span-period">.</span>
 							</span>
-						</h2>			
+						</h2>
 					</div>
 					<div class="video-overlay">
 						<div class="video-overlay-line"></div>
 					</div>
 					<div class="hero-section-video">
 						<video preload="auto" autoplay="true" loop>
-								<source src="video/Office_Perks.webm" type="video/webm">											
-								<source src="video/Office_Perks.mp4" type="video/mp4">
+							<source src="video/Office_Perks.webm" type="video/webm">
+							<source src="video/Office_Perks.mp4" type="video/mp4">
 						</video>
 					</div>
 				</div>
@@ -93,21 +112,21 @@
 									<div class="project-item_description">
 										<div class="project-item_Title">
 											<h2>
-										<span class="project-item_Titledesc">
-											FROGTOWN FARM
-										</span>  
-									  </h2>
+												<span class="project-item_Titledesc">
+													FROGTOWN FARM
+												</span>
+											</h2>
 										</div>
 										<hr class="zig">
 										<div class="project-item_Work">
 											<span class="project-item_Workdesc">
-										Front-End Development
-									</span>
+												Front-End Development
+											</span>
 										</div>
 										<div class="project-item_Work" id="project-item_work2">
 											<span class="project-item_Workdesc">
-										  Agency Work
-									  </span>
+												Agency Work
+											</span>
 										</div>
 									</div>
 								</a>
@@ -128,21 +147,21 @@
 									<div class="project-item_description">
 										<div class="project-item_Title">
 											<h2>
-										<span class="project-item_Titledesc">
-											FROGTOWN FARM
-										</span>  
-									  </h2>
+												<span class="project-item_Titledesc">
+													FROGTOWN FARM
+												</span>
+											</h2>
 										</div>
 										<hr class="zig">
 										<div class="project-item_Work">
 											<span class="project-item_Workdesc">
-										Front-End Development
-									</span>
+												Front-End Development
+											</span>
 										</div>
 										<div class="project-item_Work" id="project-item_work2">
 											<span class="project-item_Workdesc">
-										  Agency Work
-									  </span>
+												Agency Work
+											</span>
 										</div>
 									</div>
 								</a>
@@ -163,21 +182,21 @@
 									<div class="project-item_description">
 										<div class="project-item_Title">
 											<h2>
-										<span class="project-item_Titledesc">
-											FROGTOWN FARM
-										</span>  
-									  </h2>
+												<span class="project-item_Titledesc">
+													FROGTOWN FARM
+												</span>
+											</h2>
 										</div>
 										<hr class="zig">
 										<div class="project-item_Work">
 											<span class="project-item_Workdesc">
-										Front-End Development
-									</span>
+												Front-End Development
+											</span>
 										</div>
 										<div class="project-item_Work" id="project-item_work2">
 											<span class="project-item_Workdesc">
-										  Agency Work
-									  </span>
+												Agency Work
+											</span>
 										</div>
 									</div>
 								</a>
@@ -198,21 +217,21 @@
 									<div class="project-item_description">
 										<div class="project-item_Title">
 											<h2>
-										<span class="project-item_Titledesc">
-											FROGTOWN FARM
-										</span>  
-									  </h2>
+												<span class="project-item_Titledesc">
+													FROGTOWN FARM
+												</span>
+											</h2>
 										</div>
 										<hr class="zig">
 										<div class="project-item_Work">
 											<span class="project-item_Workdesc">
-										Front-End Development
-									</span>
+												Front-End Development
+											</span>
 										</div>
 										<div class="project-item_Work" id="project-item_work2">
 											<span class="project-item_Workdesc">
-										  Agency Work
-									  </span>
+												Agency Work
+											</span>
 										</div>
 									</div>
 								</a>
