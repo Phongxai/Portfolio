@@ -10,18 +10,17 @@ function setBindings() {
         $(".overlay-content a").click(function (e) {
             e.preventDefault();
             //   alert("clicked");
-    
+
             var sectionID = e.currentTarget.id + "Section";
             var linkHref = $(this).attr('href');
             //   console.log(sectionID);
             // console.log($(linkHref).offset().top);
-    
+
             $("html, body").animate({
                 scrollTop: $(linkHref).offset().top
             });
         });
-    }
-    catch(err) {
+    } catch (err) {
         console.log(err);
     }
 }
