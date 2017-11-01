@@ -1,48 +1,41 @@
-$( document ).ready(function() {
-
-  var dHeight = $('.card .card-image img').height();
-
-  $(".card-hover").css({
-    'height': dHeight + 'px'
-  });
-
-
-  setBindings();
-
-});
-
-$(window).resize(function() {
-
-  var dHeight = $('.card .card-image img').height();
-
-  $(".card-hover").css({
-    'height': dHeight + 'px'
-  });
-
-});
-
-$(window).scroll(function() {
-
-  var wScroll = $(this).scrollTop();
-
-  $('.cd-intro').css({
-    'transform': 'translate(0px, ' + wScroll / -100 + '%)'
-  });
-
-  $('.hero-image').css({
-    'transform': 'translate(0px, ' + wScroll / -80 + '%)'
-  });
-
+$(document).ready(function () {
+    setBindings();
+    // openNav();
+    linkNav();
 });
 
 function setBindings() {
-  $("#index-nav li a, .nav-button").click(function(e) {
-    e.preventDefault();
 
-    var sectionID = e.currentTarget.id + "Section";
+    try {
+        $(".overlay-content a").click(function (e) {
+            e.preventDefault();
 
-    $("html body").animate({
-      scrollTop: $("#" + sectionID).offset().top
-    }, 1000);
-  });
+            var sectionID = e.currentTarget.id + "Section";
+            var linkHref = $(this).attr('href');
+            //   console.log(sectionID);
+            // console.log($(linkHref).offset().top);
+            console.log($(linkHref));
+            
+            $("html, body").animate({
+                scrollTop: $(linkHref).offset().top
+            });
+        });
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+
+function openNav() {
+    document.getElementById('nav').style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById('nav').style.width = "0%";
+}
+
+function linkNav() {
+    $(".overlay-content a").click(function () {
+        closeNav();
+    });
 }

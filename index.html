@@ -2,145 +2,255 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Phongxai Vang, Web Designer and Front end developer."/>
-  <title>Phongxai Vang</title>
-  
-  <link rel="icon" href="img/favicon.jpg">
+	<!-- Meta Tags -->
+	<title>Phongxai Vang</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="icon" href="img/favicon.png">
 
-  <!-- Normalize CSS HTML5 Reset -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<!-- CSS Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 
-  <!-- Animate CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
-  <!-- styles.css Link -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Playfair+Display:400,700,900|Lato" rel="stylesheet">
-
-  <!-- modernizr -->
-  <script src="js/modernizr-2.8.3.min.js"></script>
-  
-  <!-- Google Analytics -->
-  <script>
-		(function(i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] || function() {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-		ga('create', 'UA-92391322-1', 'auto');
-		ga('send', 'pageview');
-	</script>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Roboto|Berkshire+Swash|" rel="stylesheet">
 </head>
 
 <body>
-  <section class="cd-intro">
-    <header>
-      <div class="nav-bar">
-         <div class="logo">
-          <!-- <span>Phongxai Vang</span> -->
-        </div> 
-        <nav class="main-nav" id="index-nav">
-          <ul>
-            <li><a id="work" href="">work</a></li>
-            <li><a id="contact" href="">contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="hero">
-      <div class="hero-inner">
-        <div class="hero-intro">
-          <div class="hero-intro-info">
-            <span class="title-line animated fadeInLeft"></span>
-            <span class="title-desc animated fadeInLeft">
-              hello
-            </span>
-            <h1 class="desk-hero-intro animated fadeInUp">
-              <div >Phongxai Vang</div>
-              <div class="animated fadeInUp">Front-End Developer</div>
-            </h1>
-            <h2 class="animated fadeInUp">
-              <p class="">
-                Passionate about technology and exploring the vast space of Front End and Design
-              </p>
-            </h2>
-          </div>
-        </div>
-        <a id="work" href="" class="nav-button">
-          <div class="mouse-wrap">
-            <div class="mouse">
-              <div class="scroller"></div>
-            </div>
-          </div>
-        </a>
-        <!-- <div class="hero-image">
-          <img src="img/abstract texture 8.png" alt="">
-        </div> -->
-      </div>
-    </div>
-  </section>
-  <div class="main-content">
-    <div class="container" id="workSection">
-      <div class="card">
-        <div class="card-image">
-          <img src="img/image.jpg" alt="">
-        </div>
-        <div class="card-info">
-          <span>
-              App Design and Prototype
-            </span>
-          <h3>
-              Vanguard Tech
-            </h3>
-        </div>
-        <a class="card-hover" href="vanguardtech.html"></a>
-      </div>
-      <div class="card">
-        <div class="card-image">
-          <img src="img/019.MacBook Pro 13in@2x.png" alt="">
-        </div>
-        <div class="card-info">
-          <span>
-              Web Design and Development
-            </span>
-          <h3>
-              Glorybound
-            </h3>
-        </div>
-        <a class="card-hover" href="glorybound.html"></a>
-      </div>
-      <div class="card">
-        <div class="card-image">
-          <img src="img/umcpi-iphone.png" alt="">
-        </div>
-        <div class="card-info">
-          <span>
-              App Design and Prototype
-            </span>
-          <h3>
-              UMCPI
-            </h3>
-        </div>
-        <a class="card-hover" href="umcpi.html"></a>
-      </div>
+	<div class="overlay" id="nav">
+		<div class="overlay-wrapper">
+			<div class="overlay-navbar">
+				<a href="#" class="closeBtn" onclick="closeNav()">
+					&#x2716
+				</a>
+			</div>
+			<div class="overlay-content_Wrapper">
+				<div class="overlay-content">
+					<a href="#workSection" id="work">
+						work
+					</a>
+					<a href="#contactSection" id="contact">
+						contact
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header id="index-header">
+		<div class="nav-bar" id="index-nav-bar">
+			<div class="logo-wrapper">
+				<a href="index.html">
+					<div class="logo" id="index-logo">
+						Pv
+					</div>
+				</a>
+			</div>
+			<div class="nav-menu-wrapper">
+				<div class="nav-menu" id="index-nav-menu">
+					<a href="#" class="openBtn" onclick="openNav()">
+						<span></span>
+						<span></span>
+						<span></span>
+						<!-- menu -->
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="main-content animated fadeIn" id="index-main-content">
+		<section class="section" id="heroSection">
+			<div class="hero-section">
+				<div class="hero-section-inner">
+					<div class="hero-section-title">
+						<h1>
+							<span class="span-block">
+								Design<span id="span-period">.</span>
+							</span>
+							<span class="span-block">
+								And
+							</span>
+							<span class="span-block">
+								Develop<span id="span-period">.</span>
+							</span>
+						</h1>
+						<h2>
+							<span>
+								Passionate about technology and exploring the vast space of Front End and Design<span id="span-period">.</span>
+							</span>
+						</h2>
+					</div>
+					<div class="video-overlay">
+						<div class="video-overlay-line"></div>
+					</div>
+					<div class="hero-section-video">
+						<video preload="auto" autoplay="true" loop>
+							<source src="video/Office_Perks.webm" type="video/webm">
+							<source src="video/Office_Perks.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section" id="workSection">
+			<div class="work-section">
+				<div class="work-section-inner clearfix">
+					<div class="work-section-item right">
+						<div class="work-section-item-inner">
+							<div class="project-item_FigureWrapper">
+								<a href="vanguard.html">
+									<figure class="project-item_Figure">
+										<img src="img/iPhone-6-Isometric-view-Mockup.png" alt="">
+									</figure>
+								</a>
+							</div>
+							<div class="project-item_DescriptionWrapper">
+								<a href="vanguard.html">
+									<div class="project-item_description">
+										<div class="project-item_Title">
+											<h2>
+												<span class="project-item_Titledesc">
+													VANGUARD TECH
+												</span>
+											</h2>
+										</div>
+										<hr class="zig">
+										<div class="project-item_Work">
+											<span class="project-item_Workdesc">
+												App Design / Prototype
+											</span>
+										</div>
+										<div class="project-item_Work" id="project-item_work2">
+											<span class="project-item_Workdesc">
+												Agency Work
+											</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="work-section-item left">
+						<div class="work-section-item-inner">
+							<div class="project-item_FigureWrapper">
+								<a href="umcpi.html">
+									<figure class="project-item_Figure">
+										<img src="img/umcpi.png" alt="">
+									</figure>
+								</a>
+							</div>
+							<div class="project-item_DescriptionWrapper">
+								<a href="umcpi.html">
+									<div class="project-item_description">
+										<div class="project-item_Title">
+											<h2>
+												<span class="project-item_Titledesc">
+													UMCPI
+												</span>
+											</h2>
+										</div>
+										<hr class="zig">
+										<div class="project-item_Work">
+											<span class="project-item_Workdesc">
+												Front-End Development / Design
+											</span>
+										</div>
+										<div class="project-item_Work" id="project-item_work2">
+											<span class="project-item_Workdesc">
+												Agency Work
+											</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="work-section-item right small">
+						<div class="work-section-item-inner">
+							<div class="project-item_FigureWrapper">
+								<a href="glorybound.html">
+									<figure class="project-item_Figure">
+										<img src="img/glorybound.png" alt="">
+									</figure>
+								</a>
+							</div>
+							<div class="project-item_DescriptionWrapper">
+								<a href="glorybound.html">
+									<div class="project-item_description">
+										<div class="project-item_Title">
+											<h2>
+												<span class="project-item_Titledesc">
+													GLORYBOUND MN
+												</span>
+											</h2>
+										</div>
+										<hr class="zig">
+										<div class="project-item_Work">
+											<span class="project-item_Workdesc">
+												Front-End Development / Design
+											</span>
+										</div>
+										<div class="project-item_Work" id="project-item_work2">
+											<span class="project-item_Workdesc">
+												Agency Work
+											</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="work-section-item left">
+						<div class="work-section-item-inner">
+							<div class="project-item_FigureWrapper">
+								<a href="frogtown.html">
+									<figure class="project-item_Figure">
+										<img src="img/frogtownfarm.png" alt="">
+									</figure>
+								</a>
+							</div>
+							<div class="project-item_DescriptionWrapper">
+								<a href="frogtown.html">
+									<div class="project-item_description">
+										<div class="project-item_Title">
+											<h2>
+												<span class="project-item_Titledesc">
+													FROGTOWN FARM
+												</span>
+											</h2>
+										</div>
+										<hr class="zig">
+										<div class="project-item_Work">
+											<span class="project-item_Workdesc">
+												Front-End Development
+											</span>
+										</div>
+										<div class="project-item_Work" id="project-item_work2">
+											<span class="project-item_Workdesc">
+												Agency Work
+											</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section" id="contactSection">
+			<div class="contact-section">
+				<div class="contact-section-inner">
+					hello
+				</div>
+			</div>
+		</section>
+	</div>
 
-    </div>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+
 </body>
 
 </html>
