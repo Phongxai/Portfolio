@@ -78,6 +78,10 @@ header {
     width: 100%;
 }
 
+video::-webkit-media-controls {
+    display:none !important;
+}
+
 .overlay {
     position: fixed;
     height: 100%;
