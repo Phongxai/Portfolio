@@ -302,7 +302,7 @@ video::-webkit-media-controls {
     display: block;
 }
 
-#span-period {
+.span-period {
     color: #fb4d42;
 }
 
