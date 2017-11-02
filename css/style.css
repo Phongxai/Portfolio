@@ -514,6 +514,23 @@ video::-webkit-media-controls {
     padding-bottom: 40px;
 }
 
+.contact-section-inner {
+    padding: 100px 30px;
+}
+
+.contact-container {
+    width: 50%;
+    float: left;
+}
+
+.contact-container ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.contact-container.cr {
+    text-align: right;
+}
 
 /**************************************************************************************************************************************************************/
 
@@ -604,5 +621,14 @@ video::-webkit-media-controls {
 @media only screen and (max-width: 670px) {
     .work-section-item-list li {
         width: 100%;
+    }
+    .contact-section-inner {
+        padding: 0;
+    }
+    .contact-container
+    .contact-container.cr {
+        width: 100%;
+        text-align: center;
+        /* float: left; */
     }
 }
