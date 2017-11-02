@@ -622,13 +622,31 @@ video::-webkit-media-controls {
     .work-section-item-list li {
         width: 100%;
     }
-    .contact-section-inner {
-        padding: 0;
-    }
-    .contact-container
+}
+
+@media only screen and (max-width: 550px) {
+    .contact-container,
     .contact-container.cr {
         width: 100%;
         text-align: center;
-        /* float: left; */
+    }
+
+    .contact-container.cr {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+
+    .contact-section-inner {
+        padding: 50px 30px;
+    }
+
+    .contact-container ul li:nth-child(1) {
+        margin-top: 0;
+    }
+
+    .contact-container ul li {
+        margin-top: 20px
     }
 }
