@@ -110,9 +110,7 @@ function initMap() {
                 var marker = new google.maps.Marker({
                     position: location,
                     map: map,
-                    icon: {
-                      fillColor: '#0099CC'
-                    }
+                    icon: 'marker.png'
                 });
                 // marker.addListener('click', function() {
                 //     infoWindow.open(map, marker);
