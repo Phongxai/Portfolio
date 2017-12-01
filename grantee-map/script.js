@@ -91,7 +91,7 @@ function initMap() {
                 };
 
                 var infoContent = "<div class='maps-info-container'>" +
-                "<h3><span id='grantee-name'>" + value.Grantee + "</span></h3>" +
+                "<h3><span id='grantee-name'>" + value.Grantee + "</span></h3>" +  
                 "<hr>" +
                 "<div class='addressContainer'>" + "<span>Address: </span>" +  value.Grantee_Location + "</div>" +
                 "<div class='areaContainer'>" + "<span>Area Served: </span>" +  value.Area_Served + "</div>" + 
@@ -109,7 +109,10 @@ function initMap() {
 
                 var marker = new google.maps.Marker({
                     position: location,
-                    map: map
+                    map: map,
+                    icon: {
+                      fillColor: '#0099CC'
+                    }
                 });
                 // marker.addListener('click', function() {
                 //     infoWindow.open(map, marker);
