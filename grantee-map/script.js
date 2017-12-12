@@ -77,7 +77,8 @@ function initMap() {
 
     $.ajax({
         // url: 'test.json',
-        url: 'https://api.myjson.com/bins/1alni3',
+        // url: 'https://api.myjson.com/bins/1alni3',
+        url: 'https://api.myjson.com/bins/bdtoj',
         dataType: 'json',
         type: 'get',
         cache: 'false',
